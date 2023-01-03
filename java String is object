@@ -1,0 +1,39 @@
+#String:-
+-in a java String is object represent sequence of charcter,Alfabate,numeric value in double quote.
+    Exa. "Ram" , "234"
+-in java String class is immutable means ones create object we cant modify
+-String class provie lots of method like compare(),equale(),length() etc
+-java.lang.String class implements comparable, serialized, charsequence
+  String----implements--->serialized
+  String----implements--->comparable
+  String----implements--->charsequence
+
+  [ Note:-charsequence interface represent sequence of character String,String buffer And String builder
+           classes implements charsequence ]
+       String---implements--->charsequence
+       String buffer---implements--->charsequence
+       String builder---implements--->charsequence
+#Haw to create String
+1)By using string literal:-
+   		//String literal
+		String s="ram";
+		System.out.println(s);  //.......literal s and a is store in String constant memory
+		String a="ram";         //.......its immutable so it not change bcs both variable same                                                   object
+		System.out.println(a);   //.......due to jvm not allow to change
+		s.concat("sham");
+		System.out.println(s); 
+		//if you want to change forcefully so
+		s=s.concat("sham");       //...give direction to jvm
+		System.out.println(s);
+   -------------------------------------------------------------------------------------------------------------------------------
+   2)By using new keyword:-
+	String x=new String("vandan");
+		System.out.println(x);
+		String y=new String("vandan");   //.....Both x and y store in heap memory
+		System.out.println(y);
+		x.concat("patil");      //...jvm fix object for x and y that why it not change
+		System.out.println(x);
+		//if you want to change forcefully so
+		x=x.concat("patil");      
+		System.out.println(x);
+    
