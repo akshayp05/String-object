@@ -1,0 +1,37 @@
+-A method which is declare withot name
+-The Lambda expression is used to provide the implementation of an interface which has functional interface
+  (means interface have only one method)
+-id reduce line of code
+-Java lambda expression is treated as a function, so compiler does not create .class file.
+Exa.1)  public interface LambdaExpression {
+		void add();
+	      }
+public class Test1 {
+public static void main(String[] args) {
+	LambdaExpression l=()->System.out.println("wellcome...!!");
+	l.add();
+}
+}
+-----------------------------------------------------------------
+2) functional interface
+public interface LambdaExpression {
+		void add();
+	      }
+interface LambdaExpression2{
+	void amount(int amt);
+}
+public class Test1 {
+public static void main(String[] args) {
+	LambdaExpression l=()->
+	{
+		System.out.println("wellcome...!!");
+	};
+	l.add();
+
+LambdaExpression2 l2=(int amt)->
+{
+	System.out.println("add: "+amt);
+};
+   l2.amount(1000);
+}
+}
