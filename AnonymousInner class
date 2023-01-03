@@ -1,0 +1,32 @@
+-A class which is declare without name called AnonymousInner class
+
+public interface Test { 
+		 void eat();  
+		}  
+		class TestAnnonymousInner1{  
+		 public static void main(String args[]){  //..A class is created, but its name is decided
+			                                       // by the compiler, which extends the Test class 
+			                                       //and provides the implementation of the eat() method.
+		 Test e=new Test(){  
+		  public void eat(){
+			  System.out.println("nice fruits");
+			  }  
+		 };  
+		 e.eat();  
+		 }  
+		}
+....................................................................................................
+3) public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "hello";
+				String str1 = "hello";
+				String str2 = new String("hello");
+				String str3 = new String("hello");
+				System.out.println(str1==str);
+				System.out.println(str1==str2);
+				System.out.println(str1==str3);   //...first object value is store SCP area but
+				System.out.println(str2==str3);         second time it create new object in heap                                                                           area
+	}
+}
